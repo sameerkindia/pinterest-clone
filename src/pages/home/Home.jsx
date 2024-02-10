@@ -3,12 +3,12 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import { StyledHome } from "./Home.styled";
 
-function Home() {
+function Home({ toggleTheme }) {
   return (
     <StyledHome>
       <div>
         <Header />
-        <Body />
+        <Body toggleTheme={toggleTheme} />
       </div>
       <Footer />
     </StyledHome>

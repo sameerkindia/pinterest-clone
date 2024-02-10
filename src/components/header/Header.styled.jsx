@@ -9,6 +9,8 @@ export const StyledHeader = styled.div`
   padding: 1.4rem 1rem 0 1.8rem;
   position: absolute;
   top: 0;
+
+  z-index: 3;
 `;
 
 export const LogoContainer = styled.div`

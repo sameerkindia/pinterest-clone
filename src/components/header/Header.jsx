@@ -14,7 +14,7 @@ function Header() {
     <StyledHeader>
       <LogoContainer>
         <FaPinterest size={33} color="#e60022" />
-        <Text as="h1" size="large" color="#e60022" className="logo">
+        <Text as="h1" size="large" colorType="pinterest" className="logo">
           Pinterest
         </Text>
       </LogoContainer>
@@ -23,8 +23,8 @@ function Header() {
         <StyledLink as="a">Business</StyledLink>
         <StyledLink as="a">Blog</StyledLink>
         <AuthButtonsContainer>
-          <AuthButton color="#e60022">Sign up</AuthButton>
-          <AuthButton>Sign in</AuthButton>
+          <AuthButton color="#e60022">Sign In</AuthButton>
+          <AuthButton colorType="signUpTextColor">Sign Up</AuthButton>
         </AuthButtonsContainer>
       </LinkContainer>
     </StyledHeader>
