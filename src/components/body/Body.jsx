@@ -12,7 +12,7 @@ import {
 import Tiles from "../tiles/Tiles";
 import { AnimatePresence } from "framer-motion";
 
-function Body({ toggleTheme }) {
+function Body(props) {
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
 
   useEffect(() => {
@@ -21,7 +21,6 @@ function Body({ toggleTheme }) {
         currentIndex + 1 < 4 ? currentIndex + 1 : 0
       );
     }, 4000);
-    console.log("running");
 
     return () => {
       clearInterval(timeOut);
@@ -73,10 +72,10 @@ function Body({ toggleTheme }) {
         </DotsContainer>
       </HeadingContainer>
 
-      <Tiles />
+      <Tiles currentIndex={currentHeadingIndex} />
 
       <StyledAnimationIcon
-        onClick={toggleTheme}
+        onClick={props.toggleTheme}
         bgColor={HEADINGS[currentHeadingIndex].color}
         size={50}
       />

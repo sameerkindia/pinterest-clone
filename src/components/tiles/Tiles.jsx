@@ -10,18 +10,16 @@ function Tiles() {
     <TilesContainer>
       {TILES_MARGINS.map((margin, i) => {
         return (
-          <div key={i}>
-            <TileColumn margin={margin}>
-              <TileImg
-                src={`https://picsum.photos/id/${randomNum()}/200/300`}
-                alt="image"
-              />
-              <TileImg
-                src={`https://picsum.photos/id/${randomNum()}/200/300`}
-                alt="image"
-              />
-            </TileColumn>
-          </div>
+          <TileColumn margin={margin} key={i}>
+            <TileImg
+              src={`https://picsum.photos/id/${randomNum()}/200/400`}
+              alt="image"
+            />
+            <TileImg
+              src={`https://picsum.photos/id/${randomNum()}/200/400`}
+              alt="image"
+            />
+          </TileColumn>
         );
       })}
     </TilesContainer>

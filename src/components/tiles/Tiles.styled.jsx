@@ -14,7 +14,6 @@ export const TileColumn = styled.div`
   transform: translateY(${(props) => props.margin || "0rem"});
   height: 30rem;
   width: 100%;
-  /* background-color: green; */
 `;
 
 export const TileImg = styled.img`
